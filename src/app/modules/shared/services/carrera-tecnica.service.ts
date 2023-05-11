@@ -12,6 +12,6 @@ export class CarreraTecnicaService {
   constructor(private http: HttpClient) { }
 
   getCarrerasTecnicas(){
-    return this.http.get(`${base_url}/carreras-tecnicas`)
+    return this.http.get(`${base_url}/carreras-tecnica`)
   }
 }
