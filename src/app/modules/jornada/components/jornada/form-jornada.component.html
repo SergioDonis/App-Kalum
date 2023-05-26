@@ -1,0 +1,24 @@
+<h2 mat-dialog-title>Examen Admision</h2>
+<mat-dialog-content>
+<form [formGroup]="jornadaForm">
+    <div class="jornada-container">
+        <mat-form-field>         
+            <input formControlName="nombreCorto" matInput placeholder="nombreCorto" required/>          
+        </mat-form-field>  
+        <mat-form-field>         
+            <input formControlName="descripcion" matInput placeholder="descripcion" required/>          
+        </mat-form-field>
+    </div>
+
+</form>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button color color="primary" (click)="onSave()">
+        <mat-icon>save</mat-icon>Guardar
+    </button>
+    <button mat-button color color="primary" (click)="onCancel()">
+        <mat-icon>cancelar</mat-icon>Cancelar
+    </button>
+</mat-dialog-actions>
+

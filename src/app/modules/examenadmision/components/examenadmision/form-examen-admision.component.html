@@ -1,0 +1,33 @@
+<!-- <p>form-carrera-tecnica works!</p> -->
+<h2 mat-dialog-title>Examen Admision</h2>
+<mat-dialog-content>
+<form [formGroup]="examenAdmisionForm">
+    <div class="examenadmision-container">
+        <mat-form-field>
+            <input formControlName="fechaExamen" matInput [matDatepicker]="picker" placeholder="examen admision" required/>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <!-- <mat-form-field>
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field> -->
+
+    </div>
+
+</form>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button color color="primary" (click)="onSave()">
+        <mat-icon>save</mat-icon>Guardar
+    </button>
+    <button mat-button color color="primary" (click)="onCancel()">
+        <mat-icon>cancelar</mat-icon>Cancelar
+    </button>
+</mat-dialog-actions>
+

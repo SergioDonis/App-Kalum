@@ -1,0 +1,9 @@
+.carrera-tecnica-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.carrera-tecnica-container > * {
+    width: 100%;
+
+}

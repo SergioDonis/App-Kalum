@@ -1,0 +1,9 @@
+.jornada-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.jornada-container > * {
+    width: 100%;
+
+}

@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CarreraTecnicaComponent } from './components/carrera-tecnica/carrera-tecnica.component';
 import { MaterialModule } from '../shared/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FormCarreraTecnicaComponent } from './components/carrera-tecnica/form-carrera-tecnica.component';
+import { ExamenadmisionComponent } from './components/examenadmision/examenadmision.component';
+import { FormExamenAdmisionComponent } from './components/examenadmision/form-examen-admision.component';
 
 
 
 @NgModule({
   declarations: [
-    CarreraTecnicaComponent,
-    FormCarreraTecnicaComponent
+    ExamenadmisionComponent,
+    FormExamenAdmisionComponent
   ],
   imports: [
     CommonModule,
@@ -19,6 +19,7 @@ import { FormCarreraTecnicaComponent } from './components/carrera-tecnica/form-c
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule
+
   ]
 })
-export class CarreraTecnicaModule { }
+export class ExamenadmisionModule { }

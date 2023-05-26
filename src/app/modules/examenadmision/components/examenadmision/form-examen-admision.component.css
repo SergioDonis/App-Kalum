@@ -1,0 +1,9 @@
+.examenadmision-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.examenadmision-container > * {
+    width: 100%;
+
+}
